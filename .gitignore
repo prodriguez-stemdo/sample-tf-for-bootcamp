@@ -1,0 +1,17 @@
+##########################################################################################################################
+# The rest of the ignore rules are defined based on: https://developer.hashicorp.com/terraform/language/style#gitignore  #
+##########################################################################################################################
+
+# Ignore all .terraform directories
+**/.terraform/*
+
+# Ignore terraform.tfstate files and any of their backup
+**/terraform.tfstate
+**/terraform.tfstate.*
+**/terraform.tfstate.lock.info
+
+# Any plan files created during the execution of terraform plan -out=...
+**/terraform.tfplan
+
+# Ignore all sensitive.auto.tfvars files
+**/sensitive.auto.tfvars
